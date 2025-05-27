@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    background-color: #070707;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #101010;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 18px;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: .15s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.subtitle {
+    margin-bottom: 80px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.content {
+    margin-bottom: 250px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+::-webkit-scrollbar {
+    background-color: #000000;
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #101010;
+}
+
+/*game*/
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 88px;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+.col-4 img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.t1 {
+    color: rgb(236, 236, 236);
+    font-family: Helvetica;
+    font-size: 35px;
+    padding-bottom: 5%;
+    font-weight: 400;
+}
+
+/* Isso está muito porco mas "resolve" por enquanto */
+.t1-align .t1-left {
+    color: rgb(236, 236, 236);
+    font-family: Helvetica;
+    font-size: 35px;
+    width: 100%;
+    text-align: left;
+    font-weight: 400;
+}
+
+.t1-align .t1-right {
+    color: rgb(236, 236, 236);
+    font-family: Helvetica;
+    font-size: 35px;
+    width: 100%;
+    text-align: right;
+    font-weight: 400;
+}
+
+.t2 {
+    font-family: helvetica;
+    font-size: 20px;
+    color: rgb(136, 136, 136);
+    font-weight: 300;
+}
+
+.t3 {
+    color: rgb(236, 236, 236);
+    font-family: Helvetica;
+    font-size: 15px;
+    padding-bottom: 1%;
+    font-weight: 200;
+}
+
+/* Botão */
+
+.col-4 button {
+    height: 55px;
+    width: 500px;
+    border-radius: 15px;
+    border: none;
+    color: #ffffff;
+    background-color: rgb(63, 63, 63);
+    cursor: pointer ;
+    font-size: 25px;
+    font-family: "Poppins" ;
+}
+
+.col-4 button:hover {
+    background-color: rgb(180, 180, 180);
+    color: black;
+
+}
+
+.col-4 button:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(117, 117, 117);
+}
+
+/* Miniatura */
+
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+.container {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    width: 300px;
+    height: 400px;
+    background: #3d3d3d;
+    margin: 20px 5px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container .img2 {
+    width: 300px;
+    height: 400px;
+    background: #3d3d3d;
+    margin: 30px 30px;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.col-4 p{
+    font-family: "Poppins";
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.col-4 a{
+    text-decoration: none;
+}
+
+.col-4 h1 {
+    font-family: "Poppins";
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.col-4 h4 {
+    color: #ffffff;
+    font-size: 20px;
+
+}
+
+.col-4 h2 {
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #0feb0b;
+    font-weight: 600;
+}
+
+.col-4 img {
+    margin-top: 20px;
+    height: 464px;
+}
+
+.col-4 .redirect-login {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 10px 45px 10px;
+    background-color: #070707;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.col-4 .redirect-login:hover {
+    background-color: #ffffff;
+    color: #070707;
+}
+
+.col-4 .redirect-login:active {
+    background-color: #ffffff;
+    color: #070707;
+}

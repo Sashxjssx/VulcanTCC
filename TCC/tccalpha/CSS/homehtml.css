@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #070707;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #101010;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 18px;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: .15s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.subtitle {
+    margin-bottom: 80px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.content {
+    margin-bottom: 250px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+::-webkit-scrollbar {
+    background-color: #000000;
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #101010;
+}
+
+/*game*/
+
+.small-container{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 88px;
+    margin-top: 25px;
+    text-decoration: none;
+    display: flex;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+.col-4 img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.col-4 h4{
+    color: rgb(236, 236, 236);
+    font-family: Helvetica;
+    font-size: 35px;
+    padding-bottom: 1%;
+}
+
+.col-4 h1{
+    color: rgb(156, 156, 156);
+    font-family: Helvetica;
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+
+.col-4 h3{
+    color: rgb(236, 236, 236);
+    font-family: Helvetica;
+    font-size: 20px;
+    padding-bottom: 1%;
+}
+
+.col-4 h2{
+    font-family: helvetica;
+    font-size: 20px;
+    color: rgb(226, 226, 226);
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* Botão */
+
+.col-4 button {
+    height: 55px;
+    width: 500px;
+    border-radius: 15px;
+    border: none;
+    color: #ffffff;
+    background-color: rgb(63, 63, 63);
+    cursor: pointer ;
+    font-size: 25px;
+    font-family: "Poppins" ;
+}
+
+.col-4 button:hover {
+    background-color: rgb(180, 180, 180);
+    color: black;
+
+}
+
+.col-4 button:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(117, 117, 117);
+}
+
+/* Miniatura */
+
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+.container {
+    display: flex;
+}
+
+.container .card {
+    width: 200px;
+    height: 200px;
+    background: #070707;
+    margin: 2px 5px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .img2 {
+    width: 200px;
+    height: 400px;
+    background: #070707;
+    margin: 30px 30px;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.col-4 p{
+    font-family: helvetica;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.col-4 a{
+    text-decoration: none;
+}
+
+.card {
+    width: 150px;
+}
+
+.card a {
+    width: 150px;
+}
+
+.imgBx {
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+}
